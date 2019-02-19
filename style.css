@@ -1,0 +1,65 @@
+* {margin: 0;
+padding: 0;
+font-family: 'Times New Roman', Times, serif;
+}
+header
+{background-image:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)), url("1491592786041.jpeg");/* linear for let image under the words as background*/
+background-size: cover;/* to complete all the page but will be come with tag height*/
+height: 100vh;
+background-position: center;
+}
+ul{list-style-type: none;/* remove marker*/
+float: right;
+margin-top: 25px;
+}
+
+ul li {display: inline-block;/* to list bar horizontal*/
+   }
+ul li a {
+    text-decoration: none;/* remove underline*/
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 2px solid white transparent;/* transparent to remove lines of border but still border exists*/
+    transition: 0.5s ease;/* to let buttom apperance with the hover*/
+
+}
+ul li.active a{ /* to let the buttom of home only with backgor color  white with word black */ 
+    background-color: #ffffff;
+    color: black;/* when mouse stop thw word will be black*/}
+
+
+ul li a:hover{
+    background-color: #ffffff;
+    color: black;/* when mouse stop thw word will be black*/
+}
+.logo img{/* for cascade logo*/
+    float: left;
+    width: 150px;
+    height: auto;
+}
+.main{/* width of the header*/
+    max-width: 1200px;
+    margin: auto;}
+.title{ /* for div of h1 for its postion*/
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);/* to derminte the word in center if page*/
+}
+.title h1{/* after put the word by . title so will change the style of the word by .title h1*/
+    color: rgb(253, 249, 249);
+    font-size: 80px;
+}
+.button{
+    position: absolute;/* to put as page*/
+    top: 65%;/* put in 50% of page from top*/
+    left:50%;
+    transform: translate(-50%,-50%);/* to derminte the word in center if page*/
+
+}
+.btn{text-decoration: none;/* remove underline*/
+    color: aliceblue;
+    padding: 10px 20px;
+    border: 2px solid white ;/* transparent to remove lines of border but still border exists*/
+    transition: 0.5s ease;/* to let buttom apperance with the hover*/
+}
